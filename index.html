@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Presentación Ariel Golubickas Oct 2025</title>
++
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<div  style="display: flex; align-items: center; justify-content: space-between">
+					<div>
+						<img src="./examples/assets/inti.png" style="background: transparent;">
+					</div>
+					<div>
+						<img src="./examples/assets/logo_ecyt.png" style="background: transparent;">
+					</div>
+					</div>
+					<p>
+						<h4>Sintesís de catalizadores para la reacción de desprendimiento de oxígeno(RDO) en medio alcalino para sistemas de producción de hidrógeno</h4>
+						<h4>12° SEMINARIO ANUAL-Octubre 2025</h4>
+						<small>Por el Ing. Ariel Golubickas-DADLE INTI</small>
+						<br><small>Director:Dr. José J. Arroyo Goméz-CONICET-DADLE INTI</small>
+						<br><small>Co-directora:Dra. Victoria Benavente Llorente-CONICET-INFIQC</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Temario</h2>
+					<ol>
+						<li>Introducción-Conceptos</li>
+						<li>Sintesís del catalizador RDO por Ni Strike </li>
+						<li>Caracterización</li>
+						<li>Resultados parciales</li>
+						<li>Proximas actividades</li>
+					</ol>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>introducción</h2>
+						<h3>Electrolisis del agua</h3>
+						<p>
+							<small>La electrólisis del agua (o Water Splitting) es un proceso que consiste en romper la molécula de agua(H2O) para producir hidrógeno(H2) y oxígeno(O2), por medio de una
+							corriente eléctrica continua, suministrada por una fuente externa. </small>
+						</p>
+						<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<img src="./examples/assets/Electrolysis_of_Water.png" height="200" >
+						</div>
+						<div>
+							<img src="./examples/assets/hidrogeno-verde.png" height="200">
+						</div>
+						</div>
+						<p>
+							<small>Este proceso es fundamental para la producción de hidrógeno verde, un elemento clave para reducir la huella de carbono.Existen tres tecnologías principales de electrolizadores: electrólisis alcalina(AWE),electrólisis de membrana de intercambio de protones(PEM) y electrólisis de óxido sólido(SOEC).</small>
+						</p>
+						<br>
+						<a href="#/2/1" class="navigate-down">
+						</a>
+							<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Tipos de Electrolizadores y electrolizador alcalino</h2>
+						<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<small>Electrolizadores</small>
+							<img src="./examples/assets/tipos.png" height="300" data-preview-image>
+						</div>
+						<div>
+							<small>Electrolizador alcalino(AWE)</small>
+							<img src="./examples/assets/alcalino.png" height="300" data-preview-image>
+						</div>
+						</div>
+							<aside class="notes">
+								En la actualidad existen tres tecnologías principales de electrolizadores: alcalinos (AWE), de membrana polimérica (PEM) y de óxidos sólidos (SOEC).
+								Cada uno presenta características particulares, ventajas y desafíos.
+
+								Electrolizador alcalino (AWE):
+								En este sistema, los iones OH⁻ son los responsables del transporte iónico.
+								El electrolito utilizado es hidróxido de potasio (KOH), y las cámaras anódica y catódica se separan mediante un diafragma, generalmente de Zirfon (ZrO₂), que evita la mezcla de gases.
+								La eficiencia ronda entre un 60 y 70%, operando a temperaturas cercanas a los 80 °C.
+								Es una tecnología madura, comercialmente disponible y de buena durabilidad, aunque presenta ciertas limitaciones: el electrolito es corrosivo, los gases se obtienen a baja presión y puede haber entrecruzamiento de gases, lo que obliga a etapas de purificación.
+
+								Electrolizador PEM:
+								Utiliza una membrana de intercambio protónico, de naturaleza ácida, que transporta los iones H⁺ y a la vez separa los gases.
+								Su eficiencia es algo mayor, del 70 al 80%, y puede operar entre 20 y 100 °C.
+								Es una tecnología más compacta y flexible, pero con un costo mayor debido al uso de materiales nobles.
+
+								Electrolizador de óxido sólido (SOEC):
+								Trabaja a altas temperaturas, de hasta 1000 °C, lo que permite reducir el consumo eléctrico.
+								Sin embargo, requiere una fuente térmica externa y aún se encuentra en etapa de investigación.
+								Su eficiencia potencial es alta, del 85 al 90%, aunque su vida útil es limitada debido a los ciclos térmicos.
+						</aside>
+					</section>
+					<section>
+						<h2>¿Por qué necesitamos los catalizadores?</h2>
+						<p>
+							<small>Un catalizador es una sustancia que aumenta la velocidad de una reacción sin modificar el cambio total de la energía libre de Gibbs estándar en la reacción, siendo un reactivo y un producto de la misma. El proceso de ruptura del agua (Water Splitting) requiere energía, y para llevarlo a cabo de manera eficiente en un electrolizador</small>
+						</p>
+							<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<img src="./examples/assets/catalizador1.png" height="300" data-preview-image>
+						</div>
+						<div>
+							<img src="./examples/assets/propiedades.png" height="300" data-preview-image>
+						</div>
+						<div>
+							<img src="./examples/assets/catalizador2.png" height="300" data-preview-image>
+						</div>
+						</div>
+							<aside class="notes">
+								El uso de catalizadores es esencial para mejorar la eficiencia y la cinética de las reacciones involucradas en la electrólisis del agua.
+								Recordemos que dividir la molécula de agua es un proceso endotérmico, que requiere energía.
+								Si bien el potencial termodinámico mínimo es de 1.23 V, en la práctica se necesita aplicar un voltaje mayor debido a los sobrepotenciales asociados a las reacciones de evolución de hidrógeno (HER) y de oxígeno (OER).
+								Los electrocatalizadores permiten:
+								Reducir la energía de activación, acelerando las reacciones.
+								Disminuir los sobrepotenciales, mejorando la eficiencia global del proceso.
+								Y en particular, favorecer la OER, que es la etapa más lenta y limitante.
+								En el diseño de catalizadores se siguen criterios como el Principio de Sabatier, que establece que el reactivo debe adsorberse de forma óptima: ni demasiado fuerte ni demasiado débil.
+								Además, se buscan materiales con alta actividad, estabilidad y bajo costo, que ofrezcan una buena transferencia de carga, resistencia química y un número elevado de sitios activos (ECSA).	
+							</aside>
+					</section>
+					<section>
+						<h2>Catalizador RDO/OER</h2>
+						<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<small>¿Por qué la reacción OER es lenta (sluggish)?</small>
+							<img src="./examples/assets/mecanismo.png" height="300" data-preview-image>
+						</div>
+						<div>
+							<small>Ni Strike</small>
+							<img src="./examples/assets/ni-strike.png" height="300" data-preview-image>
+							
+						</div>
+						</ddiv>
+						<a href="#/2">
+						</a>
+							<aside class="notes">
+								La reacción de evolución de oxígeno, o OER, es considerada la semirreacción “lenta” del proceso de electrólisis.
+								Esto se debe a que involucra una transferencia de cuatro electrones y la formación de enlaces oxígeno-oxígeno, lo que implica una cinética compleja.
+								Durante el proceso, se forman varios intermediarios superficiales —como especies oxo, peróxido y superóxido— que interactúan con los centros metálicos del catalizador.
+								Si alguno de estos intermediarios se une con demasiada fuerza, se requiere un sobrepotencial adicional para continuar la reacción.
+								Por eso, optimizar la estructura y composición de los catalizadores para OER es uno de los grandes desafíos en la producción eficiente de hidrógeno verde.
+		
+								Uno de los pasos clave en la preparación de electrodos es asegurar una buena adherencia del material catalítico al sustrato conductor.
+								Para ello se utiliza lo que se conoce como Ni Strike, una fina capa inicial de níquel depositada por electrodeposición.
+
+								Esta capa actúa como una base de adherencia sobre sustratos metálicos, como mallas de acero inoxidable, permitiendo luego la deposición de capas catalíticas más activas —por ejemplo, una estructura porosa de níquel obtenida por el método DHBT (Bubble Template).
+								En este contexto, el Ni Strike no es el catalizador final, sino una etapa previa esencial para lograr una buena conexión mecánica y eléctrica.
+						</aside>
+					</section>
+				</section>
+				<section>
+
+					<h2>Sintesis por Ni Strike</h2>
+
+					<div class="r-hstack items-start">
+						<div class="r-vstack items-start">
+							<small>Síntesis</small>
+						<div>
+							<img src="./examples/assets/ensayo.png" height="80" data-preview-image>
+						</div>
+						<div>
+							<img src="./examples/assets/ni-strike.png" height="80" data-preview-image>
+						</div>
+						</div>
+
+						<div style="width: 1px; height: 30vh; margin: 0 3rem;background-color: #999;"></div>
+						<div class="r-vstack items-start">
+							<small>Caracterización</small>
+							<small>Morfológica</small>
+						<div>
+							<img src="./examples/assets/optico.png" height="80" data-preview-image>
+						</div>
+						<div>
+							<img src="./examples/assets/sem.png" height="80" data-preview-image>
+						</div>
+						</div>
+
+						<div style="width: 1px; height: 30vh; margin: 0 3rem;background-color: #999;"></div>
+
+						<div class="r-vstack items-start">
+							<small>Morfológica</small>
+						<div>
+							<img src="./examples/assets/mapeo.png" height="80" data-preview-image>
+						</div>
+						<div>
+							<img src="./examples/assets/eds.png" height="80" data-preview-image>
+						</div>
+						</div>
+					</div>
+						<aside class="notes">
+							MESh 300 304 Y DEMAS 316
+						</aside>
+
+				</section>
+					<section>
+						<h2>Caracterización electroquímica</h2>
+						<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<h4>Celda 3 electrodos</h4>
+							<img src="./examples/assets/celda3.png" height="100" data-preview-image>
+						</div>
+						<div>
+							<h4>Electrolizador</h4>
+							<img src="./examples/assets/zero1.png" height="100" data-preview-image>
+						</div>
+						<div>
+							<h4>Electrolizador</h4>
+							<img src="./examples/assets/zero2.png" height="100" data-preview-image>
+						</div>
+						</div>
+							<div class="r-hstack" style="gap: 2rem;">
+						<div>
+							<h4>Voltametria</h4>
+							<img src="./examples/assets/cv.png" height="100" data-preview-image>
+						</div>
+						<div>
+							<h4>Polarización</h4>
+							<img src="./examples/assets/polariza.png" height="100" data-preview-image>
+				
+						</div>
+						</div>
+				
+						<a href="#/2">
+						</a>
+							<aside class="notes">
+								Para evaluar la actividad de los electrocatalizadores utilizamos el sistema clásico de tres electrodos.
+								Esta configuración permite medir el potencial del electrodo de trabajo de manera precisa y separada del contraelectrodo y del electrodo de referencia.
+								El electrodo de trabajo es donde ocurre la reacción de interés;
+								el electrodo de referencia proporciona un potencial estable y conocido;
+								y el contraelectrodo completa el circuito, permitiendo el paso de corriente.
+								Esta configuración es fundamental para técnicas como la voltametría cíclica,La técnica consiste en la aplicación de un barrido de potencial (voltaje) al Electrodo de Trabajo (WE) dentro de un intervalo específico, mientras se mide la corriente resultante 
+								"Zero-Gap" consiste en reducir o eliminar este espacio físico entre los electrodos y el separador (diafragma). Al minimizar la distancia de recorrido de los iones a través del electrolito (resistencia de la solución), se logra reducir drásticamente la resistencia óhmica (iR)
+								La curva de polarización es una representación gráfica fundamental en electroquímica que relaciona el potencial aplicado (o sobrepotencial) con la densidad de corriente resultante. Su principal utilidad es la caracterización y evaluación del rendimiento electroquímico de un sistema, especialmente en el estudio de electrocatalizadores.
+								Aplicar sucesivas cronopotenciometrias(aplico diferentes densidades de corriente y mido el potencial)
+						</aside>
+
+					</section>
+
+				<section>
+					<h2>Resultados</h2>
+					<p>
+						El análisis morfológico mediante microscopía óptica y SEM, mostró homogeneidad en los recubrimientos de níquel obtenidos.
+						 <br>El análisis de EDS mostró la presencia de Ni en todas las mallas, siendo el tejido reps aquel con mayor porcentaje de Ni (99,05%).
+						 
+					</p>
+				</section>
+
+				<section>
+					<h2>Resultados</h2>
+					<p>
+						En cuanto a la caracterización electroquímica en celda de tres electrodos, mediante una voltametría cíclica a una velocidad de barrido de 10 mV/s, se observó un mejor desempeño de la malla reps comparando con las demás mallas con y sin depósito de níquel. 
+					</p>
+				</section>
+				<section>
+					<h2>Resultados</h2>
+					<p>
+					Por otro lado, en el electrolizador alcalino zero-gap se evaluaron curvas de polarización de las tres mallas niqueladas, confirmando que la malla de mejor actividad fue el tejido Ni reps. Los resultados parciales indican que las mallas presentan actividad catalítica y el tejido reps es el de mayor actividad, posiblemente debido a su mayor área superficial. 
+					</p>
+				</section>
+
+				<section>
+					<h2>Próximas actividades</h2>
+					<ul>
+						<li>Evaluar mallas en condiciones industriales(KOH 30% p/p y 80°C)</li>
+						<li>Estudiar la influencia de las condiciones medidas(flujo,T,[KOH]) en electrolizador</li>
+						<li>Evaluar degradación en el tiempo del electrolito a escala industrial para evaluar rendimiento y usabilidad</li>
+						<li>Establecer protocolos de medida estandarizados para la evaluación del desempeño de materiales en el electrolizador</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Actividades academicas</h2>
+					<ul>
+						<li>Publicaciones: Development of porous nickel-coated stainless steel mesh 
+						electrodes for zero-gap electrolyzers. Autores: Federico Fioravanti, Ariel M. Golubickas, Guillermina 
+						Luque, Esteban Franceschini, José J. Arroyo-Gómez, Victoria Benavente. Colaboración con el 
+						Instituto de Investigaciones en Físico-Química de Córdoba (UNC)</li>
+					</ul>
+				</section>
+					<section>
+					<h2>Actividades academicas</h2>
+					<ul>
+						<li>Presentaciones en congreso</li>
+						<li>Evaluación de mallas de acero con ni electrodepositado como electrocatalizadores para 
+						la reacción de desprendimiento de oxígeno (RDO) en medio alcalino. Autores: Ariel M. Golubickas; 
+						Benavente Llorente, Victoria; José J. Arroyo Gómez. XXIV Congreso argentino de fisicoquímica y 
+						química inorgánica. Modalidad: Poster. Fecha: 22 al 25 de abril de 2025. Lugar: Bahía Blanca, 
+						Buenos Aires- Neuquén (Virtual)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Actividades academicas</h2>
+					<ul>
+						<li>Evaluación del carbón CMK-8 como electrodo para supercapacitores: Efecto de la textura y la 
+						química superficial. Autores: José J. Arroyo Gómez; Kiara Montiel Centeno; Ariel Golubickas; Deicy 
+						Barrera; Karim Sapag. Quinto Taller Latinoamericano de Materiales de Carbono (TLMC-5) del 04 al 
+						06 de noviembre de 2024 (San Luis, Argentina). Presentación de poster “”.</li>
+					</ul>
+				</section>
+					<section>
+					<h2>Actividades academicas</h2>
+					<ul>
+						<li>Cursos realizados:</li>
+						<li>“Segunda Escuela Aldo Félix Craievich sobre Técnicas de Rayos X Convencionales y 
+						de Radiación Sincrotrón para Caracterización de Materiales”. ECyT-UNSAM., 26 de agosto a 6 de 
+						septiembre de 2024. Modalidad Presencial</li>
+					</ul>
+				</section>
+						<section>
+					<h2>Actividades academicas</h2>
+					<ul>
+						<li>“Introducción a las tecnologías de hidrógeno”, perteneciente al Doctorado en Energías 
+						Renovables, de la Universidad Nacional de Catamarca (UNCA), en colaboración con la Universidad 
+						Nacional de Córdoba (UNC) y la Universidad de la Defensa Nacional (UNDEF). 15 de octubre al 9 
+						de noviembre de 2024.Modalidad Virtual.</li>
+						<li>Programación Asistida por Inteligencia Artificial-ECyT-UNSAM (En Curso). Modalidad Virtual</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>MUCHAS GRACIAS</h1>
+					<p>
+						- Dudas, consultas o sugerencias más que bienvenida.
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+			
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
